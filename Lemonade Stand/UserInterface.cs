@@ -10,6 +10,7 @@ namespace Lemonade_Stand
     {
 
         //member variables
+        //rules
         //weather
         //previous day profit
         //week profit
@@ -22,6 +23,15 @@ namespace Lemonade_Stand
         //item price
         //today proft
         //glasses sold
+
+        private string rules = "These are the rules";
+        public string Rules
+        {
+            get
+            {
+                return rules;
+            }
+        }
         
         //constructor
 

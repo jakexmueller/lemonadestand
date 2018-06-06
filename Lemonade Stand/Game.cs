@@ -11,12 +11,13 @@ namespace Lemonade_Stand
 
         //member variables
         //pitchers to make
+        //recipe
         
 
         //constructor
 
         //member methods
-        //glasses purchased
+        
 
     }
 }
