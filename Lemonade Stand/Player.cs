@@ -8,5 +8,14 @@ namespace Lemonade_Stand
 {
     class Player
     {
+
+        //member variables
+        //bank account
+
+        //constructor
+
+        //member methods
+        //make recipe
+
     }
 }

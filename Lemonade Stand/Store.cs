@@ -8,5 +8,16 @@ namespace Lemonade_Stand
 {
     class Store
     {
+
+        //member variables
+        //ice cost
+        //lemon cost
+        //honey cost
+        //glasses cost
+
+        //constructor
+
+        //member methods
+
     }
 }

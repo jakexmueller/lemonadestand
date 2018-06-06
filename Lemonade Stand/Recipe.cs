@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lemonade_Stand
 {
-    class Game
+    class Recipe
     {
 
         //member variables
-        //pitchers to make
-        
 
         //constructor
 
         //member methods
-        //glasses purchased
 
     }
 }

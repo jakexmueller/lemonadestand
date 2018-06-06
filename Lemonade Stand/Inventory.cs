@@ -8,5 +8,17 @@ namespace Lemonade_Stand
 {
     class Inventory
     {
+
+        //member variables
+        //cups
+        //lemons
+        //ice
+        //honey
+        //cash on hand
+
+        //constructor
+
+        //member methods
+
     }
 }
