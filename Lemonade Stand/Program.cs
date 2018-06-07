@@ -12,7 +12,9 @@ namespace Lemonade_Stand
         {
             Game myGame = new Game();
             UserInterface userInterface = new UserInterface();
-            Console.WriteLine(userInterface.Rules);
+                Console.WriteLine(userInterface.Rules);
+                userInterface.DisplayWeather();
+                
 
             Console.ReadLine();
         }

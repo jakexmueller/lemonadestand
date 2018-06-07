@@ -10,8 +10,9 @@ namespace Lemonade_Stand
     {
 
         //member variables
-        //rules
-        //weather
+        Weather weather = new Weather();
+        //*rules*
+        //*weather*
         //previous day profit
         //week profit
         //ice cost
@@ -24,7 +25,14 @@ namespace Lemonade_Stand
         //today proft
         //glasses sold
 
-        private string rules = "These are the rules";
+        string rules = "These are the rules";
+
+
+
+        //constructor
+        //UserInterface userInterface = new UserInterface();
+
+        //properties
         public string Rules
         {
             get
@@ -32,10 +40,19 @@ namespace Lemonade_Stand
                 return rules;
             }
         }
-        
-        //constructor
+
 
         //member methods
+        
+        public void DisplayWeather()
+        {
+            weather.GetTemperature();
+            weather.GetRainStatus();
+            weather.GetCloudLevel();        
+        }
+        
+       
+
 
     }
 }
