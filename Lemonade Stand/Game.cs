@@ -12,11 +12,21 @@ namespace Lemonade_Stand
         //member variables
         //pitchers to make
         //recipe
-        
+        Weather weather = new Weather();
+        Player player = new Player();
 
         //constructor
 
         //member methods
+
+        public void RunGame() {
+            //UserInterface userInterface = new UserInterface();
+            Console.WriteLine(UserInterface.Rules);
+                weather = UserInterface.DisplayWeather(weather);
+            Player player = new Player();
+            player.MakeRecipe();
+            }
+
         
 
     }

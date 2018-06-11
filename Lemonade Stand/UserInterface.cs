@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lemonade_Stand
 {
-    class UserInterface
+    static class UserInterface
     {
 
         //member variables
-        Weather weather = new Weather();
+        
         //*rules*
         //*weather*
         //previous day profit
@@ -25,7 +25,7 @@ namespace Lemonade_Stand
         //today proft
         //glasses sold
 
-        string rules = "These are the rules";
+        static string rules = "These are the rules";
 
 
 
@@ -33,7 +33,7 @@ namespace Lemonade_Stand
         //UserInterface userInterface = new UserInterface();
 
         //properties
-        public string Rules
+        public static string Rules
         {
             get
             {
@@ -44,11 +44,17 @@ namespace Lemonade_Stand
 
         //member methods
         
-        public void DisplayWeather()
+        public static Weather DisplayWeather(Weather weather)
         {
             weather.GetTemperature();
             weather.GetRainStatus();
-            weather.GetCloudLevel();        
+            weather.GetCloudLevel();
+            return weather;
+        }
+
+        public static void DisplayRecipe()
+        {
+            Console.WriteLine();
         }
         
        
