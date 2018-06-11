@@ -47,8 +47,8 @@ namespace Lemonade_Stand
         public static Weather DisplayWeather(Weather weather)
         {
             weather.GetTemperature();
-            weather.GetRainStatus();
-            weather.GetCloudLevel();
+            weather.GetPrecipitationStatus();
+            //weather.GetCloudLevel();
             return weather;
         }
 

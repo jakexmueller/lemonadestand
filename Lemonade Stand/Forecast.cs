@@ -14,8 +14,8 @@ namespace Lemonade_Stand
         //clouds
 
         private int temperature;
-        private int rain;
-        private int cloudLevel;
+        private int precipitation;
+        
 
 
         //constructor
@@ -34,52 +34,69 @@ namespace Lemonade_Stand
             }
         }
 
-        public int Rain
+        public int Precipiatation
         {
             get
             {
-                return rain;
+                return precipitation;
             }
             set
             {
-                rain = value;
+                precipitation = value;
             }
         }
 
-        public int CloudLevel
-        {
-            get
-            {
-                return cloudLevel;
-            }
-            set
-            {
-                cloudLevel = value;
-            }
-        }
+
 
 
         //member methods
         public int GetTemperature()
         {
-            temperature = random.Next(55, 95);
+            int minimumSummerTemperature = 55;
+            int maximumSummerTemperature = 95;
+
+            temperature = random.Next(minimumSummerTemperature, maximumSummerTemperature);
             Console.WriteLine("Today's temperature will be " + Temperature);
             return temperature;
         }
 
-        public int GetRainStatus()
+        public void GetPrecipitationStatus()
         {
-            rain = random.Next(1, 4);
-            Console.WriteLine("Chance of rain: " + Rain);
-            return rain;
-        }
+            int precipitation = random.Next(1, 8);
 
-        public int GetCloudLevel()
-        {
-            cloudLevel = random.Next(1, 4);
-            Console.WriteLine("Overcast: " + CloudLevel);
-            return cloudLevel;
+            switch (precipitation)
+            {
+                case 1:
+                    Console.WriteLine("Cloudy with Heavy Storms");
+                    break;
+                case 2:
+                    Console.WriteLine("Mostly Cloudy with Showers");
+                    break;
+                case 3:
+                    Console.WriteLine("Partly Cloudy with Showers");
+                    break;
+                case 4:
+                    Console.WriteLine("Partly Cloudy");
+                    break;
+                case 5:
+                    Console.WriteLine("Partly CLoudy");
+                    break;
+                case 6:
+                    Console.WriteLine("Sunny");
+                    break;
+                case 7:
+                    Console.WriteLine("Sunny");
+                    break;
+                case 8:
+                    Console.WriteLine("Sunny");
+                    break;
+                default:
+                    Console.WriteLine("Defatult Case");
+                    break;
+            }
         }
-    }
+          
+        }
 }
+
 
