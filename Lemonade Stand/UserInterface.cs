@@ -46,10 +46,17 @@ namespace Lemonade_Stand
         
         public static Weather DisplayWeather(Weather weather)
         {
-            weather.GetTemperature();
-            weather.GetPrecipitationStatus();
+            weather.GetDayTemperature();
+            weather.ChangeInTemperature();
             //weather.GetCloudLevel();
             return weather;
+        }
+
+        public static Forecast DisplayWeather(Forecast forecast)
+        {
+            forecast.GetTemperature();
+            forecast.GetPrecipitationStatus();
+            return forecast;
         }
 
         public static void DisplayRecipe()

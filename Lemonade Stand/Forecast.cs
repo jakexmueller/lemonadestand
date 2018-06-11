@@ -56,13 +56,13 @@ namespace Lemonade_Stand
             int maximumSummerTemperature = 95;
 
             temperature = random.Next(minimumSummerTemperature, maximumSummerTemperature);
-            Console.WriteLine("Today's temperature will be " + Temperature);
+            Console.WriteLine("Today's temperature is forecasted to be " + Temperature);
             return temperature;
         }
 
         public void GetPrecipitationStatus()
         {
-            int precipitation = random.Next(1, 8);
+            precipitation = random.Next(1, 8);
 
             switch (precipitation)
             {
