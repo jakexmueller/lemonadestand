@@ -10,12 +10,19 @@ namespace Lemonade_Stand
     {
 
         //member variables
+        public int numberOfLemons = 0;
+        public int amountOfIce = 0;
+        public int amountOfHoney = 0;
+        public int numberOfCups = 0;
         //cups
         //lemons
         //ice
         //honey
         //cash on hand
-
+       
+        
+            
+        
         //constructor
 
         //member methods

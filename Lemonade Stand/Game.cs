@@ -24,7 +24,9 @@ namespace Lemonade_Stand
             Console.WriteLine(UserInterface.Rules);
                 weather = UserInterface.DisplayWeather(weather);
             Player player = new Player();
+            player.GoShopping();
             player.MakeRecipe();
+
             }
 
         

@@ -11,7 +11,14 @@ namespace Lemonade_Stand
 
         //member variables
         int bankAccount = 20;
-        Recipe myRecipe;
+        Recipe myRecipe = new Recipe();
+        Store store = new Store();
+        Inventory inventory = new Inventory();
+        string amountOfIce;
+        string numberOfLemons;
+        string amountOfHoney;
+        string numberOfCups;
+
 
         //constructor
 
@@ -25,27 +32,41 @@ namespace Lemonade_Stand
         }
 
         //member methods
-        public void MakeRecipe()
+
+
+        public void GoShopping()
         {
-            myRecipe = new Recipe();
+            //store = new Store();
 
             Console.WriteLine("You have $" + BankAccount + " in your account");
-            Console.WriteLine("How much ice do you want to purchase?");
-            string amountOfIce = Console.ReadLine();
 
-            Console.WriteLine("How many lemons do you want to buy?");
-            string numberOfLemons = Console.ReadLine();
-            myRecipe.numberOfLemons = Int32.Parse(numberOfLemons);
+            Console.WriteLine("Ice costs $5 per bag of 50 cubes. How many bags of ice do you want to purchase?");
+            amountOfIce = Console.ReadLine();
+            inventory.amountOfIce = Int32.Parse(amountOfIce);
 
-            Console.WriteLine("How much honey do you want to buy?");
-            string amountOfHoney = Console.ReadLine();
-            Console.WriteLine("How many cups do you want to buy?");
-            string numberOfCups = Console.ReadLine();
+            Console.WriteLine("Lemons cost $1 each. How many lemons do you want to buy?");
+            numberOfLemons = Console.ReadLine();
+            inventory.numberOfLemons = Int32.Parse(numberOfLemons);
+
+            Console.WriteLine("Honey costs $1 per cup. How many cups of honey do you want to buy?");
+            amountOfHoney = Console.ReadLine();
+            inventory.amountOfHoney = Int32.Parse(amountOfHoney);
+
+            Console.WriteLine("Cups cost $3 for every bag of 15 cups. How many bags of cups do you want to buy?");
+            numberOfCups = Console.ReadLine();
+            inventory.numberOfCups = Int32.Parse(numberOfCups);
+        }
+
+        public void MakeRecipe()
+        {
+           
+
+            Console.WriteLine();
+
 
 
 
         }
-            
 
     }
 }

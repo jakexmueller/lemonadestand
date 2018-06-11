@@ -15,10 +15,10 @@ namespace Lemonade_Stand
         //honey cost
         //glasses cost
 
-        int icePrice = 1; //for every 25 cubes
+        int icePrice = 5; //for 1 bag of 50 cubes
         int lemonPrice = 1; //each
         int honeyPrice = 1; //for every cup
-        int glassPrice = 1; //for every 5
+        int glassPrice = 3; //for 1 bag of 15 cups
 
 
         //constructor

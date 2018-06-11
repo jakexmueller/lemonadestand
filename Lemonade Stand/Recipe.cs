@@ -10,13 +10,13 @@ namespace Lemonade_Stand
     {
 
         //member variables
-        public int numberOfLemons;
+
 
 
         //constructor
         public Recipe()
         {
-            numberOfLemons = 0;
+            
         }
 
         //member methods
