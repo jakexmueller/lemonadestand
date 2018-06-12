@@ -14,6 +14,7 @@ namespace Lemonade_Stand
         //recipe
         Weather weather = new Weather();
         Player player = new Player();
+        Store store = new Store();
 
         //constructor
 
@@ -23,11 +24,11 @@ namespace Lemonade_Stand
             //UserInterface userInterface = new UserInterface();
             Console.WriteLine(UserInterface.Rules);
                 weather = UserInterface.DisplayWeather(weather);
-            Player player = new Player();
-            player.GoShopping();
+            // Player player = new Player();
+            player.GoShopping(store);
             player.MakeRecipe();
 
-            }
+        }
 
         
 
