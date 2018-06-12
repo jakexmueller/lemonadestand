@@ -47,6 +47,14 @@ namespace Lemonade_Stand
                 }
             }
             Console.WriteLine(satisfiedCustomers + " customers bought lemonade at $" + player.priceToCharge + " per cup");
+            int revenue = satisfiedCustomers * Int32.Parse(player.priceToCharge);
+            Console.WriteLine("Revenue = $" + revenue);
+            int cost = player.costOfMaterials;
+            Console.WriteLine("Cost = $" + cost);
+            int profit = revenue - cost;
+            Console.WriteLine("Profit = $" + profit);
+            player.BankAccount += profit;
+            Console.WriteLine("Account Balance = $" + player.BankAccount);
         }
 
         public void RunGame() {
