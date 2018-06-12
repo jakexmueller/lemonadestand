@@ -10,7 +10,6 @@ namespace Lemonade_Stand
     {
 
         //member variables
-        
         //*rules*
         //*weather*
         //previous day profit
@@ -59,9 +58,21 @@ namespace Lemonade_Stand
             return forecast;
         }
 
-        public static void DisplayRecipe()
+        /*public static void DisplayInventory(Inventory inventory)
         {
-            Console.WriteLine();
+            Console.WriteLine(inventory.numberOfLemons);
+            Console.WriteLine(inventory.amountOfHoney);
+            Console.WriteLine(inventory.amountOfIce);           
+            Console.WriteLine(inventory.numberOfCups);
+            
+        }*/
+
+        public static void DisplayRecipe(Recipe recipe)
+        {
+            Console.WriteLine("Today's recipe:");
+            Console.WriteLine(recipe.lemonsPerPitcher + " lemons in each pitcher.");
+            Console.WriteLine(recipe.honeyPerPitcher + " tablespoons of honey in each pitcher.");
+            Console.WriteLine(recipe.cubesPerGlass + " ice cubes in each glass.");
         }
         
        

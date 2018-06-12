@@ -62,7 +62,7 @@ namespace Lemonade_Stand
             inventory.numberOfCups += Int32.Parse(bagsOfCups);
         }
 
-        public void MakeRecipe()
+        public Recipe MakeRecipe()
         {
             string lemonsPerPitcher;
             string honeyPerPitcher;
@@ -83,6 +83,7 @@ namespace Lemonade_Stand
             Console.WriteLine("How many ice cubes do you want in each glass? A full glass is 5 cubes.");
             cubesPerGlass = Console.ReadLine();
             myRecipe.cubesPerGlass = Int32.Parse(cubesPerGlass);
+            return myRecipe;
 
         }
 

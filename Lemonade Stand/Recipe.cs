@@ -10,9 +10,9 @@ namespace Lemonade_Stand
     {
 
         //member variables
-        public int lemonsPerPitcher;
-        public int honeyPerPitcher;
-        public int cubesPerGlass;
+        public int lemonsPerPitcher = 0;
+        public int honeyPerPitcher = 0;
+        public int cubesPerGlass = 0;
 
 
 
