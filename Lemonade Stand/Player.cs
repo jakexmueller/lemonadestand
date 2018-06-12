@@ -10,11 +10,13 @@ namespace Lemonade_Stand
     {
 
         //member variables
-        int bankAccount = 20;
+        int bankAccount = 50;
         Recipe myRecipe = new Recipe();
         
         Inventory inventory = new Inventory();
-        
+
+        public string priceToCharge;
+
 
 
         //constructor
@@ -37,6 +39,7 @@ namespace Lemonade_Stand
             string numberOfLemons;
             string amountOfHoney;
             string bagsOfCups;
+            //public string priceToCharge;
 
 
             Console.WriteLine("You have $" + BankAccount + " in your account");
@@ -48,18 +51,29 @@ namespace Lemonade_Stand
             Console.WriteLine("How many bags of ice do you want to purchase?");
             amountOfIce = Console.ReadLine();
             inventory.amountOfIce += Int32.Parse(amountOfIce);
+            bankAccount -= (Int32.Parse(amountOfIce))*store.IcePrice;
+            Console.WriteLine("Account: $" + bankAccount);
 
             Console.WriteLine("How many lemons do you want to buy?");
             numberOfLemons = Console.ReadLine();
             inventory.numberOfLemons += Int32.Parse(numberOfLemons);
+            bankAccount -= (Int32.Parse(numberOfLemons)) * store.LemonPrice;
+            Console.WriteLine("Account: $" + bankAccount);
 
             Console.WriteLine("How many cups of honey do you want to buy?");
             amountOfHoney = Console.ReadLine();
             inventory.amountOfHoney += Int32.Parse(amountOfHoney);
+            bankAccount -= (Int32.Parse(amountOfHoney)) * store.HoneyPrice;
+            Console.WriteLine("Account: $" + bankAccount);
 
             Console.WriteLine("How many bags of cups do you want to buy?");
             bagsOfCups = Console.ReadLine();
             inventory.numberOfCups += Int32.Parse(bagsOfCups);
+            bankAccount -= (Int32.Parse(bagsOfCups)) * store.HoneyPrice;
+            Console.WriteLine("Account: $" + bankAccount);
+
+            
+            
         }
 
         public Recipe MakeRecipe()
@@ -83,6 +97,8 @@ namespace Lemonade_Stand
             Console.WriteLine("How many ice cubes do you want in each glass? A full glass is 5 cubes.");
             cubesPerGlass = Console.ReadLine();
             myRecipe.cubesPerGlass = Int32.Parse(cubesPerGlass);
+            Console.WriteLine("How much would you like to charge for a cup (in $)? .50, 1.00, 1.50, 2.00, or 2.50?");
+            priceToCharge = Console.ReadLine();
             return myRecipe;
 
         }

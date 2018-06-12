@@ -69,6 +69,7 @@ namespace Lemonade_Stand
 
         public static void DisplayRecipe(Recipe recipe)
         {
+            Console.Clear();
             Console.WriteLine("Today's recipe:");
             Console.WriteLine(recipe.lemonsPerPitcher + " lemons in each pitcher.");
             Console.WriteLine(recipe.honeyPerPitcher + " tablespoons of honey in each pitcher.");
