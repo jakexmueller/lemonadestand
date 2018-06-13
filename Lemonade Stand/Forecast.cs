@@ -9,15 +9,10 @@ namespace Lemonade_Stand
     class Forecast
     {
         //member variables
-        //*temperature*
-        //rain
-        //clouds
 
         private int temperature;
         private int precipitation;
         
-
-
         //constructor
         Random random = new Random();
 
@@ -45,9 +40,6 @@ namespace Lemonade_Stand
                 precipitation = value;
             }
         }
-
-
-
 
         //member methods
         public int GetTemperature()
@@ -105,7 +97,7 @@ namespace Lemonade_Stand
             }
         }
           
-        }
+    }
 }
 
 

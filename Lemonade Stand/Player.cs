@@ -79,7 +79,6 @@ namespace Lemonade_Stand
             Console.WriteLine("Account: $" + bankAccount);
 
             costOfMaterials = ((Int32.Parse(amountOfIce)) * store.IcePrice) + ((Int32.Parse(numberOfLemons)) * store.LemonPrice) + ((Int32.Parse(amountOfHoney)) * store.HoneyPrice) + ((Int32.Parse(bagsOfCups)) * store.CupsPrice);
-            //bankAccount -= (Int32.Parse(amountOfIce)) * store.IcePrice) + ((Int32.Parse(numberOfLemons)) * store.LemonPrice) + ((Int32.Parse(amountOfHoney)) * store.HoneyPrice) + ((Int32.Parse(bagsOfCups)) * store.CupsPrice);
 
         }
 
@@ -89,7 +88,6 @@ namespace Lemonade_Stand
             string honeyPerPitcher;
             string cubesPerGlass;
             
-
             Console.WriteLine("Now it's time to make your lemonade! Your current inventory is:");
             Console.WriteLine(inventory.amountOfIce + " bags of 50 ice cubes");
             Console.WriteLine(inventory.numberOfLemons + " lemons");
@@ -111,6 +109,5 @@ namespace Lemonade_Stand
             return myRecipe;
 
         }
-
     }
 }

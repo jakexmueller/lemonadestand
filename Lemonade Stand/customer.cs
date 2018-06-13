@@ -45,10 +45,6 @@ namespace Lemonade_Stand
             {
                 maximum -= 10;
             }
-            //if (recipe.cubesPerGlass <= 3 && temperature >= 85)
-            //{
-            //    maximum -= 10;
-            //}
             if (forecast.Precipiatation <= 2)
             {
                 maximum -= 20;
@@ -58,34 +54,10 @@ namespace Lemonade_Stand
                 maximum -= 10;
             }
 
-            //Random random = new Random();
-            
             purchasingIdentifier = rnd.Next(minimum, maximum);
 
-
-
-
-            //int availableCustomers = 100;
-            //int satisfiedCustomers = 0;
-
-            //for(int i=1; i<availableCustomers; i++)
-            //{
-            //    if (purchasingIdentifier >= 30)
-            //    {
-            //        satisfiedCustomers += 1;
-            //    }
-            //    /*else
-            //    {
-            //        Console.WriteLine("Customer doesn't buy lemonade.");
-            //    }*/
-            //}
-
-            //Console.WriteLine(satisfiedCustomers + " customers bought lemonade.");
-
-            
-
         }
-        //buy lemonade
+        
 
     }
 }

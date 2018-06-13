@@ -11,8 +11,6 @@ namespace Lemonade_Stand
         Forecast forecast = new Forecast();
         Random random = new Random();
 
-
-
         //member variables
         private int dayTemperature;
         private string precipitationStatus;
@@ -48,7 +46,6 @@ namespace Lemonade_Stand
 
         public int GetDayForecast()
         {
-            //Random random = new Random();
             
             dayTemperature = forecast.GetTemperature();
             precipitationStatus = forecast.GetPrecipitationStatus();
@@ -80,8 +77,5 @@ namespace Lemonade_Stand
             }
             
         }
-
-        
-
     }
 }

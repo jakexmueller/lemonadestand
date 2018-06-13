@@ -10,10 +10,6 @@ namespace Lemonade_Stand
     {
 
         //member variables
-        //ice cost
-        //lemon cost
-        //honey cost
-        //glasses cost
 
         int icePrice = 5; //for 1 bag of 50 cubes
         int lemonPrice = 1; //each
