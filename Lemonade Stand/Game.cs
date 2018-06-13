@@ -17,6 +17,7 @@ namespace Lemonade_Stand
         Forecast forecast = new Forecast();
         List<String> daysOfTheWeek = new List<String>();
         List<int> dailyProfit = new List<int>();
+        int profit;
         int totalProfit = 0;
 
         Random rnd;
@@ -37,6 +38,7 @@ namespace Lemonade_Stand
         
         public int StartSales ()
         {
+           // int profit;
             int satisfiedCustomers = 0;
             int minimumToPurchase = 30;
             for (int i  = 0; i <= customers.Count-1; i++)
@@ -52,7 +54,7 @@ namespace Lemonade_Stand
             Console.WriteLine("Revenue = $" + revenue);
             int cost = player.costOfMaterials;
             Console.WriteLine("Cost = $" + cost);
-            int profit = revenue - cost;
+            profit = revenue - cost;
             Console.WriteLine("Profit = $" + profit);
             player.BankAccount += profit;
             Console.WriteLine("Account Balance = $" + player.BankAccount);
@@ -74,12 +76,12 @@ namespace Lemonade_Stand
                 {
                 Console.WriteLine(UserInterface.Rules);
                 weather = UserInterface.DisplayWeather(weather);
-                forecast = UserInterface.DisplayPrecipitation(forecast);
                 player.GoShopping(store);
                 Recipe recipe = player.MakeRecipe();
                 UserInterface.DisplayRecipe(recipe);
-                dailyProfit.Add(StartSales());               
-                totalProfit += StartSales();
+                dailyProfit.Add(profit);               
+                totalProfit += StartSales(); // cannot call StartSales() method twice
+
                 
             }
 

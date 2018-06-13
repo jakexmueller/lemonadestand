@@ -10,15 +10,12 @@ namespace Lemonade_Stand
     {
 
         //member variables
-        int bankAccount = 50;
-        Recipe myRecipe = new Recipe();
-        
+        int bankAccount = 100;
+        Recipe myRecipe = new Recipe();       
         Inventory inventory = new Inventory();
 
         public string priceToCharge;
         public int costOfMaterials;
-
-
 
         //constructor
 
@@ -44,9 +41,6 @@ namespace Lemonade_Stand
             string numberOfLemons;
             string amountOfHoney;
             string bagsOfCups;
-            //int costOfMaterials;
-            //public string priceToCharge;
-
 
             Console.WriteLine("You have $" + BankAccount + " in your account");
             Console.WriteLine("Ice costs $5 per bag of 50 cubes.");

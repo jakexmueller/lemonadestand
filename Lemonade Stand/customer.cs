@@ -10,10 +10,9 @@ namespace Lemonade_Stand
     {
 
         //member variables
-        int minimum = 1;
-        int maximum = 100;
+        
         public int purchasingIdentifier;
-        Random rnd;
+        //Random rnd;
 
         //constructor
    
@@ -21,6 +20,8 @@ namespace Lemonade_Stand
         //member methods
         public void BuysLemonade(Forecast forecast, Random rnd)
         {
+            int minimum = 1;
+            int maximum = 100;
 
             Player player = new Player();
             Recipe recipe = new Recipe();
