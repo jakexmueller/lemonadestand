@@ -18,7 +18,7 @@ namespace Lemonade_Stand
         int icePrice = 5; //for 1 bag of 50 cubes
         int lemonPrice = 1; //each
         int honeyPrice = 1; //for every cup
-        int glassPrice = 3; //for 1 bag of 15 cups
+        int cupsPrice = 3; //for 1 bag of 15 cups
 
 
         //constructor
@@ -48,11 +48,11 @@ namespace Lemonade_Stand
             }
         }
 
-        public int GlassPrice
+        public int CupsPrice
         {
             get
             {
-                return glassPrice;
+                return cupsPrice;
             }
         }
 

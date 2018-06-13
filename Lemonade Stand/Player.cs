@@ -75,11 +75,11 @@ namespace Lemonade_Stand
             Console.WriteLine("How many bags of cups do you want to buy?");
             bagsOfCups = Console.ReadLine();
             inventory.numberOfCups += Int32.Parse(bagsOfCups);
-            bankAccount -= (Int32.Parse(bagsOfCups)) * store.HoneyPrice;
+            bankAccount -= (Int32.Parse(bagsOfCups)) * store.CupsPrice;
             Console.WriteLine("Account: $" + bankAccount);
 
-            costOfMaterials = ((Int32.Parse(amountOfIce)) * store.IcePrice) + ((Int32.Parse(numberOfLemons)) * store.LemonPrice) + ((Int32.Parse(amountOfHoney)) * store.HoneyPrice) + ((Int32.Parse(bagsOfCups)) * store.HoneyPrice);
-
+            costOfMaterials = ((Int32.Parse(amountOfIce)) * store.IcePrice) + ((Int32.Parse(numberOfLemons)) * store.LemonPrice) + ((Int32.Parse(amountOfHoney)) * store.HoneyPrice) + ((Int32.Parse(bagsOfCups)) * store.CupsPrice);
+            //bankAccount -= (Int32.Parse(amountOfIce)) * store.IcePrice) + ((Int32.Parse(numberOfLemons)) * store.LemonPrice) + ((Int32.Parse(amountOfHoney)) * store.HoneyPrice) + ((Int32.Parse(bagsOfCups)) * store.CupsPrice);
 
         }
 
