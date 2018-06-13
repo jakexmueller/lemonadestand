@@ -15,6 +15,7 @@ namespace Lemonade_Stand
 
         //member variables
         private int dayTemperature;
+        private string precipitationStatus;
 
         //constructor
 
@@ -31,13 +32,27 @@ namespace Lemonade_Stand
             }
         }
 
+        public string PrecipitationStatus
+        {
+            get
+            {
+                return precipitationStatus;
+            }
+            set
+            {
+                precipitationStatus = value;
+            }
+        }
+
         //member methods
 
-        public int GetDayTemperature()
+        public int GetDayForecast()
         {
             //Random random = new Random();
             
             dayTemperature = forecast.GetTemperature();
+            precipitationStatus = forecast.GetPrecipitationStatus();
+            
             return dayTemperature;
         }
 
@@ -60,7 +75,7 @@ namespace Lemonade_Stand
             }
             else
             {
-                Console.WriteLine("The forecast waas correct at " + dayTemperature);
+                Console.WriteLine("The forecast was correct at " + dayTemperature);
                 return dayTemperature;
             }
             

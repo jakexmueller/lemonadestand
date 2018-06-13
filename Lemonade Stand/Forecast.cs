@@ -57,10 +57,11 @@ namespace Lemonade_Stand
 
             temperature = random.Next(minimumSummerTemperature, maximumSummerTemperature);
             Console.WriteLine("Today's temperature is forecasted to be " + Temperature);
+
             return temperature;
         }
 
-        public void GetPrecipitationStatus()
+        public string GetPrecipitationStatus()
         {
             precipitation = random.Next(1, 8);
 
@@ -68,31 +69,39 @@ namespace Lemonade_Stand
             {
                 case 1:
                     Console.WriteLine("Cloudy with Heavy Storms");
-                    break;
+                    return "Cloudy with Heavy Storms";
+                    
                 case 2:
                     Console.WriteLine("Mostly Cloudy with Showers");
-                    break;
+                    return "Mostly Cloudy with Showers";
+                    
                 case 3:
                     Console.WriteLine("Partly Cloudy with Showers");
-                    break;
+                    return "Partly Cloudy with Showers";
+                    
                 case 4:
                     Console.WriteLine("Partly Cloudy");
-                    break;
+                    return "Partly Cloudy";
+                    
                 case 5:
-                    Console.WriteLine("Partly CLoudy");
-                    break;
+                    Console.WriteLine("Partly Cloudy");
+                    return "Partly CLoudy";
+                    
                 case 6:
                     Console.WriteLine("Sunny");
-                    break;
+                    return "Sunny";
+                    
                 case 7:
                     Console.WriteLine("Sunny");
-                    break;
+                    return "Sunny";
+                    
                 case 8:
                     Console.WriteLine("Sunny");
-                    break;
+                    return "Sunny";
+                    
                 default:
-                    Console.WriteLine("Defatult Case");
-                    break;
+                    return "Defatult Case";
+                    
             }
         }
           

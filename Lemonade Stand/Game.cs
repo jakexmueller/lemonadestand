@@ -17,6 +17,19 @@ namespace Lemonade_Stand
         Store store = new Store();
         List<Customer> customers = new List<Customer>();
         Forecast forecast = new Forecast();
+        List<String> daysOfTheWeek = new List<String>();
+        List<int> dailyProfit = new List<int>();
+        int totalProfit = 0;
+
+
+
+        /*Day sunday = new Day();
+        Day monday = new Day();q
+        Day tuesday = new Day();
+        Day wednesday = new Day();
+        Day thursday = new Day();
+        Day friday = new Day();
+        Day saturday = new Day();*/
         Random rnd;
         //Recipe recipe = new Recipe();
 
@@ -33,7 +46,8 @@ namespace Lemonade_Stand
 
         //member methods
 
-        public void StartSales ()
+        
+        public int StartSales ()
         {
             int satisfiedCustomers = 0;
             int minimumToPurchase = 30;
@@ -55,18 +69,38 @@ namespace Lemonade_Stand
             Console.WriteLine("Profit = $" + profit);
             player.BankAccount += profit;
             Console.WriteLine("Account Balance = $" + player.BankAccount);
+
+            return profit;
         }
 
         public void RunGame() {
-            //UserInterface userInterface = new UserInterface();
-            Console.WriteLine(UserInterface.Rules);
-                weather = UserInterface.DisplayWeather(weather);
-            // Player player = new Player();
-            player.GoShopping(store);
-            Recipe recipe = player.MakeRecipe();
-            UserInterface.DisplayRecipe(recipe);
-            StartSales();
             
+            daysOfTheWeek.Add("Sunday");
+            daysOfTheWeek.Add("Monday");
+            daysOfTheWeek.Add("Tuesday");
+            daysOfTheWeek.Add("Wednesday");
+            daysOfTheWeek.Add("Thursday");
+            daysOfTheWeek.Add("Friday");
+            daysOfTheWeek.Add("Saturday");
+
+         
+
+            for (int i = 0; i < daysOfTheWeek.Count; i++)
+                {
+                //UserInterface userInterface = new UserInterface();
+                Console.WriteLine(UserInterface.Rules);
+                weather = UserInterface.DisplayWeather(weather);
+                //Console.WriteLine(UserInterface.DisplayPrecipitation);
+                forecast = UserInterface.DisplayPrecipitation(forecast);
+                // Player player = new Player();
+                player.GoShopping(store);
+                Recipe recipe = player.MakeRecipe();
+                UserInterface.DisplayRecipe(recipe);
+                //StartSales();
+                totalProfit += StartSales();
+                Console.WriteLine("Total Running Profit: " + totalProfit);
+                Console.WriteLine("Wet Pussy");
+            }
             //customer.BuysLemonade(forecast);
 
             

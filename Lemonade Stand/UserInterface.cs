@@ -24,7 +24,7 @@ namespace Lemonade_Stand
         //today proft
         //glasses sold
 
-        static string rules = "These are the rules";
+        static string rules = "The rules are simple. Every day this week, you will be selling lemonade.The amount of money you make depends the weather and the recipe you decide to make.";
 
 
 
@@ -45,8 +45,9 @@ namespace Lemonade_Stand
         
         public static Weather DisplayWeather(Weather weather)
         {
-            weather.GetDayTemperature();
+            weather.GetDayForecast();
             weather.ChangeInTemperature();
+            
             //weather.GetCloudLevel();
             return weather;
         }
@@ -54,7 +55,14 @@ namespace Lemonade_Stand
         public static Forecast DisplayWeather(Forecast forecast)
         {
             forecast.GetTemperature();
+            //forecast.GetPrecipitationStatus();
+            return forecast;
+        }
+
+        public static Forecast DisplayPrecipitation(Forecast forecast)
+        {
             forecast.GetPrecipitationStatus();
+            Console.WriteLine(forecast);
             return forecast;
         }
 

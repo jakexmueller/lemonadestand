@@ -10,6 +10,8 @@ namespace Lemonade_Stand
     {
 
         //member variables
+       
+
         //revenue
         //cost
         //profit
