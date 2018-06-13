@@ -24,7 +24,7 @@ namespace Lemonade_Stand
         //today proft
         //glasses sold
 
-        static string rules = "The rules are simple. Every day this week, you will be selling lemonade.The amount of money you make depends the weather and the recipe you decide to make.";
+        static string rules = "The rules are simple. Every day this week, you will be selling lemonade.The amount of money you make depends on the weather and the recipe you decide to make.";
 
 
 

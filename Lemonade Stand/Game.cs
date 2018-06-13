@@ -70,6 +70,8 @@ namespace Lemonade_Stand
             player.BankAccount += profit;
             Console.WriteLine("Account Balance = $" + player.BankAccount);
 
+           
+
             return profit;
         }
 
@@ -97,13 +99,28 @@ namespace Lemonade_Stand
                 Recipe recipe = player.MakeRecipe();
                 UserInterface.DisplayRecipe(recipe);
                 //StartSales();
+                dailyProfit.Add(StartSales());
+                
                 totalProfit += StartSales();
-                Console.WriteLine("Total Running Profit: " + totalProfit);
-                Console.WriteLine("Wet Pussy");
+                
+
+
             }
+
+
+
+            Console.WriteLine("Total Running Profit: " + totalProfit);
+            Console.WriteLine("Sunday profit: " + dailyProfit[0]);
+            Console.WriteLine("Monday profit: " + dailyProfit[1]);
+            Console.WriteLine("Tueday profit: " + dailyProfit[2]);
+            Console.WriteLine("Wednesday profit: " + dailyProfit[3]);
+            Console.WriteLine("Thursday profit: " + dailyProfit[4]);
+            Console.WriteLine("Friday profit: " + dailyProfit[5]);
+            Console.WriteLine("Saturday profit: " + dailyProfit[6]);
+
             //customer.BuysLemonade(forecast);
 
-            
+
 
         }
 
